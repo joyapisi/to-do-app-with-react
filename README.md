@@ -51,13 +51,14 @@ React JS To Do List App
 
 ### Key Features <a name="key-features"></a>
 
-- **[REact JS]**
+- **[React JS]**
 - **[Desktop-Version]**
 - **[Dynamic-Design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎥 Video Explanation <a name="video-explanation">Coming soon!</a>
+## 🎥 Video Explanation 
+<a name="video-explanation">Coming soon!</a>
 
 ## 🚀 Live Demo <a href="" name="live-demo">Live Demo coming soon</a>
 
@@ -83,7 +84,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone[(https://github.com/joyapisi/To-Do-List.git)]
+  git clone[(https://github.com/joyapisi/react-todo-list.git)]
 ```
 ## Understand Set Up Requirements
 Since this code is using React JS, you will run `npm start` in your terminal to run it instead of opening it with the live server. 
