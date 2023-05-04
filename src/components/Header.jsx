@@ -5,12 +5,12 @@ const Header = () => {
     color: '#aeadad',
     textAlign: 'center',
   };
-  
-    return (
-      <header style={headerStyle}> 
-        <h1>ToDos</h1>
-        <p>Items will persist in the browser local storage</p>
-      </header>
-    );
-  };
-  export default Header;
+
+  return (
+    <header style={headerStyle}>
+      <h1>ToDos</h1>
+      <p>Items will persist in the browser local storage</p>
+    </header>
+  );
+};
+export default Header;
