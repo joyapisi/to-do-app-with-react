@@ -14,11 +14,12 @@ const InputTodo = ({ addTodoItem }) => {
     if (title.trim()) {
       addTodoItem(title);
       setTitle('');
-      setMessage('');
     } else {
-      setMessage('Please add item');
+      alert('Please add item');
     }
   };
+  
+
   return (
     <>
       <form onSubmit={handleSubmit} className="form-container">

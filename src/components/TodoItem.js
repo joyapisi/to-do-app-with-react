@@ -1,5 +1,6 @@
 /* eslint-disable */
-const TodoItem = ({ itemProp, handleChange, delTodo }) => (
+const TodoItem = ({ itemProp, handleChange, delTodo }) => {
+  return (
   <li>
     <input
       type="checkbox"
@@ -9,5 +10,6 @@ const TodoItem = ({ itemProp, handleChange, delTodo }) => (
     <button onClick={() => delTodo(itemProp.id)}>Delete</button>
     {itemProp.title}
   </li>
-);
+  );
+  };
 export default TodoItem;
