@@ -6,15 +6,7 @@ function Navbar() {
   const ref = useRef();
 
   useOnClickOutside(ref, dropdown, () => setDropdown(false));
-  // useEffect(() => {
-  //   const handler = (event) => {
-  //     if (dropdown && ref.current && !ref.current.contains(event.target)) {
-  //       setDropdown(false);
-  //     }
-  //   };
-  //   document.addEventListener("mousedown", handler);
-  //   document.removeEventListener("mousedown", handler);
-  // }, [dropdown]);
+
   return (
     <nav>
       <ul>
