@@ -1,5 +1,7 @@
 /* eslint-disable */
 import { useState } from 'react';
+import { FaPlusCircle } from "react-icons/fa";
+import { IconContext } from 'react-icons';
 
 const InputTodo = ({ addTodoItem }) => {
   const [title, setTitle] = useState('');
@@ -14,11 +16,12 @@ const InputTodo = ({ addTodoItem }) => {
     if (title.trim()) {
       addTodoItem(title);
       setTitle('');
-      setMessage('');
     } else {
-      setMessage('Please add item');
+      alert('Please add item');
     }
   };
+  
+
   return (
     <>
       <form onSubmit={handleSubmit} className="form-container">
@@ -29,7 +32,17 @@ const InputTodo = ({ addTodoItem }) => {
           onChange={handleChange}
           className="input-text"
         />
-        <button type="button" className="input-submit">Submit</button>
+        <IconContext.Provider
+          value={{
+            color: "#5e5e5e",
+            style: { fontSize: "20px", color: "#ff0000" },
+            className: "submit-iconn",
+          }}
+        >
+          <button className="input-submit">
+            <FaPlusCircle />
+          </button>
+        </IconContext.Provider>
       </form>
       <span className="submit-warning">
         {' '}

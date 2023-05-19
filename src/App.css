@@ -8,9 +8,9 @@ body {
   font-family: "Segoe UI", sans-serif;
   line-height: 1.4;
   color: #000;
-  background: #fff;
   height: 100vh;
   font-weight: 400;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 header {
@@ -70,4 +70,53 @@ header {
   color: red;
   margin-top: 5px;
   display: block;
+}
+
+.input-submit svg {
+  color: #5e5e5e;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+}
+
+.todo-list {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 0.5rem;
+}
+
+header h1,
+header p {
+  color: #dfdfdf;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 15px 470px 20px 20px;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.edit-btn {
+  order: 3;
+  background-color: transparent;
+  border: none;
+}
+
+.trash-btn {
+  order: 4;
+  background-color: transparent;
+  border: none;
+  margin-left: 5px;
 }
