@@ -86,12 +86,13 @@ header {
 }
 
 .todo-list {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 5px;
   border-radius: 0.5rem;
 }
 
-header h1, header p {
+header h1,
+header p {
   color: #dfdfdf;
 }
 
